@@ -33,3 +33,7 @@ Read the part of the file delimited by the LazyBlob and returns it as a string.
 `stream(): ReadableStream`
 
 Returns a stream around the part of the file delimited by the LazyBlob.
+
+## About
+
+This was originally made for https://github.com/huggingface/huggingface.js with the help of Eliott C.
