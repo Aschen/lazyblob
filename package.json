@@ -1,7 +1,7 @@
 {
 	"name": "lazyblob",
 	"version": "1.0.1",
-	"description": "A LazyBlob is a replacement for the Blob class that allows to read files lazily in order to preserve memory.",
+	"description": "A LazyBlob is a replacement for the Blob class that allows to lazy read files in order to preserve memory.",
 	"repository": "https://github.com/aschen/lazyblob.git",
 	"publishConfig": {
 		"access": "public"
