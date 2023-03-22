@@ -8,6 +8,8 @@ The main difference is the instantiation, which is done asynchronously using the
 
 ## Usage
 
+Install from [NPM](https://www.npmjs.com/package/lazyblob): `npm install lazyblob`
+
 ```js
 const lazyBlob = await LazyBlob.create("package.json");
 
