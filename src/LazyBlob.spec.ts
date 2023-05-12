@@ -48,4 +48,11 @@ describe("LazyBlob", () => {
     const result = await slice.stream().getReader().read();
     expect(new TextDecoder().decode(result.value)).toBe(expectedText);
   });
+
+  it("should fail on invalid slice positions", async () => {
+    const file = await open("package.json", "r");
+    const lazyBlob = await LazyBlob.create("package.json");
+
+    expect(() => lazyBlob.slice(-10, -20)).toThrowError();
+  });
 });

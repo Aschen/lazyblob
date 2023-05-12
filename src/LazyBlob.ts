@@ -66,7 +66,7 @@ export class LazyBlob extends Blob {
    */
   slice(start = 0, end = this.size): LazyBlob {
     if (start < 0 || end < 0) {
-      new TypeError("Unsupported negative start/end on LazyBlob.slice");
+      throw new TypeError("Unsupported negative start/end on LazyBlob.slice");
     }
 
     const slice = new LazyBlob(
